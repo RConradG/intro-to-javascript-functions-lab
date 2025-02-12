@@ -39,7 +39,7 @@ function isAdult(age) {
     return "That is not a valid age";
   }
 }
-console.log("Exercise 2 Result:", isAdult(0));
+console.log("Exercise 2 Result:", isAdult(21));
 
 /*
 Exercise 3: isCharAVowel()
