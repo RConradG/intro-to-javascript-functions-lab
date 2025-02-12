@@ -31,16 +31,13 @@ Complete the exercise in the space below:
 */
 
 function isAdult(age) {
-  // if (typeof age === Number) {
   if (age > 0 && age < 18) {
     return "Minor";
   } else if (age >= 18) {
     return "Adult";
-  } else {
-    // checks negative age values
+  } else { // reply for negative age values
     return "That is not a valid age";
   }
-  // }
 }
 console.log("Exercise 2 Result:", isAdult(0));
 
@@ -63,6 +60,7 @@ function isCharAVowel(char) {
     char === "a" || char === "e" || char === "i" || char === "o" || char === "u"
   );
 }
+// below is using a switch case
   // switch(char) { // alternative 
   //   case "a":
   //   case "e":
@@ -213,7 +211,7 @@ function basicCalculator(num1, num2, operation) {
       }
   }
 } 
-console.log("Exercise 9 Result:", basicCalculator(10, 0, "divide"));
+console.log("Exercise 9 Result:", basicCalculator(10, 5, "subtract"));
 
 /*
 Exercise 10: calculateGrade()
@@ -250,7 +248,7 @@ function calculateGrade(score) {
 }
 
 
-console.log('Exercise 10 Result:', calculateGrade(80.0));
+console.log('Exercise 10 Result:', calculateGrade(100));
 /*
 Exercise 11: createUsername()
 
@@ -272,8 +270,6 @@ function createUsername(firstName, lastName) {
   let userName = firstName.substr(0,3) + lastName.substr(0, 3) + combinedName.length;
   return userName;
 }
-
-
 
 console.log('Exercise 11 Result:', createUsername("Samantha", "Green"));
 
